@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --light-color: #FFF8E8;
+    --creamy: #F7EED3;
+    --greeny: #AAB396;
+    --browny: #674636;
+    --greyblack:rgb(49, 44, 44);
+}
+*{
+    color: var(--greyblack);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--light-color);
+    font-family: "Rubik", sans-serif;
+}
+section{
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 5%;
+    margin-bottom: 20px;
+}
+
+
+/* navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    justify-content: space-between; 
+    align-items:flex-end; 
+    /* padding: 0 20px;  */
+    font-weight: 500;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.navbar-main{
+    border-bottom: 3px solid var(--creamy);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 20px; */
+    color: var(--browny);
+}
+
+.navbar-nav {
+    /* margin-left: auto; */
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 30px;
+
+}
+.nav-link{
+    color: var(--browny) !important;
+}
+.nav-link:hover{
+    background-color: var(--creamy);
+    border-radius: 10px;
+    transition: all 200ms ease;
+    padding: 5px;
+}
+
+/* hero */
+.hero{
+    /* background-color: var(--creamy); */
+    background-image: url(./sample_bg_7.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    height: max-content;
+    margin-bottom: 20px;
+    /* padding-top: 0%; */
+}
+.hero-col{
+    margin-bottom: 5%;
+    text-align: left;
+}
+#hero-colm-1{
+    background-color: var(--light-color);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+}
+.hero-col h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.hero-col p{
+    font-size: 1rem;
+    color: grey;
+}
+.diff-word{
+    color: var(--browny);
+
+}
+.img-fluid{
+    border-radius: 50%;
+    min-height: 100px; 
+    max-height: 350px;
+    padding:20px;
+    background-color: var(--light-color);
+}
+
+/* buttons */
+.main-btn{
+    background-color: var(--browny);
+    color: #FFF8E8;
+    border-radius: 10px;
+    border: 2px solid var(--browny);
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--browny);
+    border: 2px solid var(--browny);
+}
+
+/* featured */
+.featured{
+    background-color: var(--creamy);
+}
+.featured-title p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: grey;
+}
+.featured-title h3{
+    text-align: center;
+    color: var(--browny);
+    font-weight: 700;
+}
+.card{
+    padding: 20px;
+    gap: 3px;
+    text-align: left;
+    border-radius: 10px;
+    max-height: 500px;
+    max-width: 250px;
+    min-width: 250px;
+}
+.card-title{
+    font-size: 1rem;
+    color: var(--greyblack);
+    text-align: left;
+}
+.card-text{
+    font-size: 0.8rem;
+    color: grey;
+    text-align: left;
+}
+.card-btn{
+    background-color: var(--browny);
+    color: #FFF8E8;
+    font-size: 0.8rem;
+}
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* about us */
+.about-us h3{
+    text-align: left;
+    color: var(--browny);
+    font-weight: 700;
+}
+.about-us{
+    /* background-color: var(--creamy); */
+    background-image: url(./sample_bg_9.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    height: max-content;
+}
+.about-us img{
+        min-height: 100px; 
+        max-height: 280px;
+        padding:20px;
+        border-radius: 50%;
+}
+.abt-us-row{
+    background-color:#fff8e8de;
+    margin: 20px;
+    border-radius: 10px;
+    color: grey !important;
+    margin-top: 40px;
+}
+#abt-us-col2{
+    background-color: var(--light-color);
+    padding: 20px;
+}
+
+
+/* reviews */
+.reviews{
+    background-color: var(--browny);
+    /* background-image: url(./sample_bg_10.jpg); */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: max-content; 
+}
+.review-row{
+    padding: 10px;
+    margin-top: 25px;
+}
+.review-box-main{
+    background-color: var(--light-color);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 220px;
+    min-height: 220px;
+}
+#review-main{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--greyblack);
+    padding: 10px;
+    border-right: 2px dashed var(--browny);
+}
+#review-sub{
+    font-size: 0.7rem;
+    color: grey !important;
+    font-weight: 500;
+    padding: 10px;
+}
+.reviews h3{
+    color: var(--light-color);
+    text-align: center;
+}
+.reviews span{
+    color: transparent;
+    font-weight: 700;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: var(--light-color);
+}
+
+/* footer */
+.footer{
+    margin: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    /* background-color: var(--creamy); */
+    color: var(--browny);
+    text-align: left !important;
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif !important;
+}
+.footer-part{
+    background-color: var(--creamy);
+}
+.icons-socials i{
+    padding: 10px;
+    color: var(--browny);
+}
+.contact-section i{
+    padding-right: 15px;
+    color: var(--browny);
+}
+.copyright-main{
+    font-size: 0.8rem;
+    color: grey;
+}
+.footer-upper-part{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--light-color);
+}
+.footer {
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif !important;
+}
+
+.icons-socials a {
+    margin-right: 10px;
+}
+
+.footer-upper-part {
+    padding-bottom: 20px;
+}
+
+.row {
+    padding-bottom: 20px;
+}
+.contact-section p {
+    margin-bottom: 15px;
+}
+.copyright-main {
+    border-top: 3px solid var(--light-color);
+    padding-top: 20px;
+}
+.text-heading{
+    font-weight: 600;
+    color: var(--browny);
+}
+.container p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: grey;
+}
